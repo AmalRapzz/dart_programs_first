@@ -42,4 +42,13 @@ void main(){
   print("Colour : ${m3.colour="Gray"}");
   print("Seating : ${m3.colour="4 Seater"}");
   print("Milage : ${m3.colour="22.05 kmpl"}");
+
+  Suzuki m4 = Suzuki();
+  print("");
+  print("Brand : ${Suzuki.brand}");
+  print("Model : ${m4.model="Ertiga"}");
+  print("Engine : ${m4.engine="1462 cc petrol engine and a 1462 cc CNG engine"}");
+  print("Colour : ${m4.colour="Red"}");
+  print("Seating : ${m4.colour="7 Seater"}");
+  print("Milage : ${m4.colour="20.3 kmpl to 26.11 km/kg"}");
 }
