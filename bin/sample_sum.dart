@@ -10,7 +10,7 @@ class sum{
      print(a+b+c);
    }
 
-         }
+}
 
 void main() {
 
