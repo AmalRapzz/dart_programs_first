@@ -135,7 +135,7 @@ void main(){
   print(name is! int);
 
 
-  ///  Conditional or Ternary Operator   --- ?:
+  ///  Conditional or Ternary Operator   --- ?: , ??
   ///
   ///  Condition?true_staement:false-statement [?:]
 
@@ -172,4 +172,13 @@ void main(){
 
   var num2 = p>q && p!=q ? "300 is greater than 150 and p is not equal to q":" pis equal to q";
   print(num2);
+
+
+  ///  Null Aware Operator --- ??
+  ///
+  ///   Condtion ?? Statement to be executed if the condition is null .
+  String? pwd="dncasdbuvb";
+  var re = pwd?.length ?? "password not must be null";  //length function is used to find length of the string stored in the variable.
+  print(re);
+
 }
