@@ -177,6 +177,8 @@ void main(){
   ///  Null Aware Operator --- ??
   ///
   ///   Condtion ?? Statement to be executed if the condition is null .
+  ///
+  ///   ??  - This operator is used to find the length of the value and if the value is null it will be show next statement.
   String? pwd="dncasdbuvb";
   var re = pwd?.length ?? "password not must be null";  //length function is used to find length of the string stored in the variable.
   print(re);
