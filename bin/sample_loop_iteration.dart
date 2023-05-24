@@ -174,19 +174,19 @@ void main(){
 
   print("----4.Sum of EVEN and ODD numbers in between 1 and 10 in single program---");
   print("");
-  int n_sum=0,e_sum=0,o_sum=0;
+  int nSum=0,eSum=0,oSum=0;
   for(int s=1;s<=10;s++)
     {
-      n_sum+=s;
+      nSum+=s;
       if(s%2==0){
-        e_sum+=s;
+        eSum+=s;
       }else{
-        o_sum+=s;
+        oSum+=s;
       }
     }
-  print("Sum of First 10 numbers : ${n_sum}");
-  print("Sum of ODD numbers in First 10 numbers : ${o_sum}");
-  print("Sum of EVEN numbers in First 10 numbers : ${e_sum}");
+  print("Sum of First 10 numbers : ${nSum}");
+  print("Sum of ODD numbers in First 10 numbers : ${oSum}");
+  print("Sum of EVEN numbers in First 10 numbers : ${eSum}");
 
    ///----5.Multiplication table of any number----
 
