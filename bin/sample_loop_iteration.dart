@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(){
 
      ///-------Loops / iterations-------
@@ -121,35 +123,12 @@ void main(){
     l++;
   }while(l<=10);
 
-  ///---Sum of first 10 numbers---
+
+
+  ///---1.ODD Numbers in between 1 and 10---
 
   print("");
-  print("----Sum of first 100 numbers---");
-
-  print("");
-  int sum=0;
-  for(int n=0;n<=100;n++)
-    {
-      sum=sum+n;   //sum+=n;
-    }
-  print(sum);
-
-  ///---Printing EVEN Numbers in first 10 numbers---
-
-  print("");
-  print("----Printing Even Numbers in first 10 numbers---");
-  print("");
-
-  for(int m=1;m<=10;m++)
-  {
-    if(m%2==0) {
-      print(m);
-    }
-  }
-  ///---Printing ODD Numbers in first 10 numbers---
-
-  print("");
-  print("----Printing ODD Numbers in first 10 numbers---");
+  print("----1.ODD Numbers in between 1 and 10---");
   print("");
 
   for(int o=1;o<=10;o++)
@@ -159,6 +138,70 @@ void main(){
     }
   }
 
+  ///---2.EVEN Numbers in between 1 and 10---
 
+  print("");
+  print("----2.Even Numbers in between 1 and 10---");
+  print("");
+
+  for(int m=1;m<=10;m++)
+  {
+    if(m%2==0) {
+      print(m);
+    }
+  }
+
+
+
+
+
+
+  ///---3.Sum of first 10 natural numbers---
+
+  print("");
+  print("----3.Sum of first 10 numbers---");
+
+  print("");
+  int sum=0;
+  for(int n=0;n<=10;n++)
+    {
+      sum=sum+n;   //sum+=n;
+    }
+  print(sum);
+
+  print("");
+  ///---4.Sum of EVEN and ODD numbers in between 1 and 10 in single program---
+
+  print("----4.Sum of EVEN and ODD numbers in between 1 and 10 in single program---");
+  print("");
+  int n_sum=0,e_sum=0,o_sum=0;
+  for(int s=1;s<=10;s++)
+    {
+      n_sum+=s;
+      if(s%2==0){
+        e_sum+=s;
+      }else{
+        o_sum+=s;
+      }
+    }
+  print("Sum of First 10 numbers : ${n_sum}");
+  print("Sum of ODD numbers in First 10 numbers : ${o_sum}");
+  print("Sum of EVEN numbers in First 10 numbers : ${e_sum}");
+
+   ///----5.Multiplication table of any number----
+
+  print("");
+  print("----5.Multiplication table of any number---");
+  print("");
+
+  print("Enter The Number : ");
+
+  var num =stdin.readLineSync()!;
+  var a= int.parse(num!);
+
+  for(int p=1;p<=10;p++)
+    {
+      print("${p} x ${num} = ${p*a}");
+    }
 
 }
