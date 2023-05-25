@@ -94,8 +94,11 @@ void function9(int a, int b)      ///          Parameterised Functions
 
 void function10(int i,[int? a, int? b])///     <---- optional positional Parameterised Function
 {
+  print("i = $i");
   print("a = $a");
   print("b = $b");
 
   ///here i is normal parameter a and b are optional parameter
+  ///Value a&b are optionally given so it should create with null aware operator(?)
+  ///If the value are given it will orderly assigned
 }
