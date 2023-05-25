@@ -3,21 +3,36 @@ import 'dart:io';
 import 'package:test/expect.dart';
 
 void main(){
-
+  print("");
+  print("Enter the First number : ");
   int x=int.parse(stdin.readLineSync()!);
+  print("Enter the Second number : ");
   int y=int.parse(stdin.readLineSync()!);
-  add(10,20);
+  print("");
+
+  print("<---Parameterised Function");
+  print("");
+  add(x,y);
+  sub(x,y);
+  mul(x,y);
+  div(x,y);
+
+  print("");
+  print("<---Lambda Function");
+  print("");
   add1(x,y);
-  sub(30,20);
-  mul(10,20);
-  div(40,20);
+  sub1(x,y);
+  mul1(x,y);
+  div1(x,y);
+
 }
+
+///   <---Parameterised Function
 
 void add(int a, int b)
 {
   print("Sum = ${a+b}");
 }
-add1(int a, int b)=>print("Sum 1 =${a+b}");
 void sub(int c, int d)
 {
   print("Difference = ${c-d}");
@@ -32,3 +47,10 @@ void div(int f, int g)
 {
   print("Divition = ${f/g}");
 }
+
+///  <---Lambda Function
+
+add1(int a, int b)=>print("Sum = ${a+b}");
+sub1(int a, int b)=>print("Difference = ${a-b}");
+mul1(int a, int b)=>print("Product = ${a*b}");
+div1(int a, int b)=>print("Division = ${a/b}");
