@@ -46,6 +46,8 @@ void main()  ///   <---Main Function
   print(function6());
   function7();
   function8(10);
+
+  function10(2,10,30);
 }
 
 void function1()   ///   <---Default Function : Without Return Type
@@ -83,3 +85,17 @@ String function5(String name, int age){  ///   <---Parameterised Function With r
 int function6()=> 10;   ///  <---Lambda Function / Arrow Function / falt Arrow Notation
 void function7()=> print("hello");
 void function8(int a)=> print(a);
+
+
+void function9(int a, int b)      ///          Parameterised Functions
+{
+  print("Sum = ${a+b}");
+}
+
+void function10(int i,[int? a, int? b])///     <---- optional positional Parameterised Function
+{
+  print("a = $a");
+  print("b = $b");
+
+  ///here i is normal parameter a and b are optional parameter
+}
