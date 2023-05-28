@@ -45,9 +45,19 @@ void main()  ///   <---Main Function
 
   print(function6());
   function7();
+
   function8(10);
 
-  function10(2,10,30);
+  function10(2,10,30);     ///     <---- Optional positional Parameterised Function
+
+  function11(10,c: 10);    ///     <---- Optional Named Parameterised Function
+  function11(10,a: 20,b: 30,c: 40);
+
+  function12(name: "Amal", phone: 1234567890, email: "amalrappz2002@gmail.com", phone_2: 7894561230);
+
+  function13(name: "Athul", phone: 7856429852);
+  function13(name: "Anu", phone: 1234566842,email: "anuthomas@gmail.com");
+  function13(name: "Ammu", phone: 54683763873,email: "ammuthomas@gmail.com",course: "Python");
 }
 
 void function1()   ///   <---Default Function : Without Return Type
@@ -87,12 +97,12 @@ void function7()=> print("hello");
 void function8(int a)=> print(a);
 
 
-void function9(int a, int b)      ///          Parameterised Functions
+void function9(int a, int b)      ///      <---- Parameterised Functions
 {
   print("Sum = ${a+b}");
 }
 
-void function10(int i,[int? a, int? b])///     <---- optional positional Parameterised Function
+void function10(int i,[int? a, int? b])    ///     <---- Optional Positional Parameterised Function
 {
   print("i = $i");
   print("a = $a");
@@ -101,4 +111,27 @@ void function10(int i,[int? a, int? b])///     <---- optional positional Paramet
   ///here i is normal parameter a and b are optional parameter
   ///Value a&b are optionally given so it should create with null aware operator(?)
   ///If the value are given it will orderly assigned
+}
+
+void function11(int x,{int? a,int? b, int? c})                  ///     <---- Optional Named Parameterised Function with null aware operator
+{
+  print("x = $x");
+  print("a = $a");
+  print("b = $b");
+  print("c = $c");
+}
+void function12({required String name,required int phone,required String email,required int phone_2})                  ///     <---- Optional Named Parameterised Function with required argument
+{
+ print("name = $name");
+ print("Phone = $phone");
+ print("Email = $email");
+ print("Phone 2 = $phone_2");
+}
+
+void function13({required String name, required int phone,String? email, String course ="Flutter"})                  ///     <---- Optional Named Parameterised Function with default value
+{
+  print("name = $name");
+  print("Phone = $phone");
+  print("Email = $email");
+  print("Course = $course");
 }

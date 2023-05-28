@@ -1,8 +1,9 @@
-class Structure{
+class Structure {
 
-               //instance variable - Globally Declared Variable
-               //variable declared inside the class outside the function
-               //outside the class instance variable can be accessed only through object
+  //instance variable - Globally Declared Variable
+  //variable declared inside the class outside the function
+  //outside the class instance variable can be accessed only through object
+
 
 String? name;   // ? - Null Aware :If the Value "name" can be null or not null
 int? age;
