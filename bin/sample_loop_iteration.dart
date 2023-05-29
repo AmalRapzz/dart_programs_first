@@ -2,16 +2,16 @@ import 'dart:io';
 
 void main(){
 
-     ///-------Loops / iterations-------
+  ///            -------Loops / iterations-------
 
   /// 1.For loop
-  ///    for
-  ///    for in
-  ///    for each
+  ///
+  ///   - for
+  ///   -- for in
+  ///   --- for each
   ///
   /// 2.while loop
   /// 3.do while loop
-
 
 
   ///------for loop------
@@ -151,11 +151,6 @@ void main(){
     }
   }
 
-
-
-
-
-
   ///---3.Sum of first 10 natural numbers---
 
   print("");
@@ -170,6 +165,7 @@ void main(){
   print(sum);
 
   print("");
+
   ///---4.Sum of EVEN and ODD numbers in between 1 and 10 in single program---
 
   print("----4.Sum of EVEN and ODD numbers in between 1 and 10 in single program---");

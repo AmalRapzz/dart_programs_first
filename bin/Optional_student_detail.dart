@@ -53,7 +53,7 @@ void studentd_upload(){
 
 void student_details ({required String FirstName , String? MiddleName , required String LastName,
   required int Phone,  String? Email, required String Gender,required String Place,
-  String? Course="Python", String? Institute="Luminar"}){
+  String? Course="Python", String Institute="Luminar"}){
 
 
   if(MiddleName!=null || LastName!=null) {
@@ -72,16 +72,17 @@ void student_details ({required String FirstName , String? MiddleName , required
   print("Gender : $Gender");
   print("Place : $Place");
 
-  if(Course=="") {
+  if(Course==null) {
     print("Course : $Course");
   }else {
     print("Course : Python");
   }
 
-  if(Institute=="")
+  if(Institute==null)
   {
-    print("Institute : $Institute");
-  }else {
     print("Institute : Luminar");
+  }
+  else {
+    print("Institute : $Institute");
   }
 }

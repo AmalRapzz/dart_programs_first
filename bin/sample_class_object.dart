@@ -5,9 +5,9 @@ class Structure {
   //outside the class instance variable can be accessed only through object
 
 
-String? name;   // ? - Null Aware :If the Value "name" can be null or not null
+String? name;   /// ? - Null Aware :If the Value "name" can be null or not null
 int? age;
-static String course = "Flutter";  //Static variable - the value of course will become 'Flutter'.
+static String course = "Flutter";  ///Static variable - the value of course will become 'Flutter'.
 }
 
 void main()
@@ -25,7 +25,7 @@ void main()
 
   print("name : ${s2.name="Anu"}");
   print("Age : ${s2.age=21}");
-  print("Course : ${Structure.course='Python'}");  //We edit the Static Variable in another Statement
+  print("Course : ${Structure.course='Python'}");  ///We can edit the Static Variable in another Statement
 
 
   print("name : ${s3.name="Abi"}");

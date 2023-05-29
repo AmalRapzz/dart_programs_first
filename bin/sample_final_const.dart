@@ -9,7 +9,7 @@ void main()
 
   var a = 10;           //In Case of Var, The value inside the a is always an integer value or same datatype
   // a="string";        //Datatype is fixed according to the initial value.
-  a=10;
+  a=12;
 
   dynamic b =10;
   b="String";
