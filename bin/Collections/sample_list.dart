@@ -116,7 +116,7 @@ void main()
   print("List O = $O");
   print("List P = $P");
 
-  ///7.list.generate
+  ///7.List.generate
 
   print("");
   var Q=List.generate(10, (index) => null);
@@ -125,5 +125,6 @@ void main()
   print("List R = $R");
   R.add(200);
   print("List R = $R");
+
 
 }

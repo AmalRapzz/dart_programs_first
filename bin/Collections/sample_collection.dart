@@ -156,4 +156,19 @@ void main(){
     print(j);
   }
   print("");
+
+  ///-----Data Insertion Methods-----   <--All the values from the list J collected to the parameter 'i' one by one
+
+  /// 1) FOR-EACH Loop
+
+  List1.forEach ((i)
+  {
+    print(i);
+  });
+
+  List2.forEach ((j)
+  {
+    print(j);
+  });
+
 }
