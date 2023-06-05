@@ -5,37 +5,42 @@
 /// ------> 3) Map
 /// -------> 4) Queue
 
-///  1) List :
-///           * Ordered Collection of values.
-///           * Supporting Duplicate values/elements
-///           * Representation []
-///
-///  eg:- [1,2,3]
-///
-///           TYPES -
-///                  * Fixed Length List :Cannot insert new values
-///                  * Growable List :Can modify the list with new data's.
-///
-///
-///   Creation :-
-///               List x = [];  --> Empty List
-///               List x = [1,2,"hai",4.5];  -->Dynamic List
-///               List<int> z =[1,2,3,5];  -->List that holds integer values only
-///               var i =[1,2,3,4,5];  -->List that holds integer values only
-///
-///   Accessing :-
-///           whole list  - print(_list_name_);
-///           using index - listname[index];
 
 void main(){
 
-  ///List 1
+  ///  1) List :
+  ///           * Ordered Collection of values.
+  ///           * Supporting Duplicate values/elements
+  ///           * Representation []
+  ///
+  ///  eg:- [1,2,3]
+  ///
+  ///           TYPES -
+  ///                  * Fixed Length List :Cannot insert new values
+  ///                  * Growable List :Can modify the list with new data's.
+  ///
+  ///
+  ///   Creation :-
+  ///               List x = [];  --> Empty List
+  ///               List x = [1,2,"hai",4.5];  -->Dynamic List
+  ///               List<int> z =[1,2,3,5];  -->List that holds integer values only
+  ///               var i =[1,2,3,4,5];  -->List that holds integer values only
+  ///
+  ///   Accessing :-
+  ///           whole list  - print(_list_name_);
+  ///           using index - listname[index];
+
+  print("");
+  print("----------------LIST----------------");
+  print("");
+
+  ///List 1 >>>
   var List1 =[0,1,2,3,4,5,6,7,8,9];
 
-  ///List 2
+  ///List 2 >>>
   var List2 =["A","B","C","D","E","F","G","H","I","J","K"];
 
-  ///List 3
+  ///List 3 >>>
   List List3 =["a","b","c","d"];
 
   ///Printing List1
@@ -171,4 +176,103 @@ void main(){
     print(j);
   });
 
+  ///  2) Set :
+  ///           * Ordered Collection of values.
+  ///           * It will not Support Duplicate values/elements
+  ///           * Representation { }
+  ///
+  ///  eg:- {1,2,3,4,5}
+
+  /// Set 1 >>>
+
+  print("");
+  print("----------------SET----------------");
+  print("");
+
+  Set set1 = {0,1,2,3,4,5,6};
+
+  var set2 = <int> {50,51,52,53,54,55,56};
+
+  Set set3 = {"A","B","C","D","E","F"};
+
+  print("Set 1 : $set1");
+  print("");
+
+  print("Set 2 : $set2");
+  print("");
+
+  print("Set 3 : $set3");
+  print("");
+
+  ///-----Adding Elements in The Set---
+
+  /// a) Set_name.add(data);   <-- Inserting data to the Set. It will be the at the last position of the Set
+
+  set1.add(7);
+  set1.add(8);
+
+  set2.add(57);
+  set2.add(58);
+
+  set3.add("G");
+  set3.add("H");
+
+  print("Set 1 : $set1");
+  print("");
+
+  print("Set 2 : $set2");
+  print("");
+
+  print("Set 3 : $set3");
+  print("");
+
+  /// b) Set_name.addAll([data1,data2,data3,...]);   <-- Inserting multiple data to the Set. It will be the at the last position of the Set
+
+  set1.addAll({9,10,11,12});
+  set2.addAll({59,60,61,62});
+  set3.addAll({"I","J","K","L"});
+
+  print("Set 1 : $set1");
+  print("");
+
+  print("Set 2 : $set2");
+  print("");
+
+  print("Set 3 : $set3");
+  print("");
+
+  Set set4 = Set.from(set1);
+  print("Set 4 : $set4");
+  print("");
+
+  Set set6 = Set.of({"H","A","I"," ","W","O","R","L","D"});
+
+  print("Set 6 : $set6");
+  print("");
+
+  Set set7 = Set.unmodifiable({"Even Numbers : " ,2,4,6,8,10,"......"});
+  print("Set 7 : $set7");
+  print("");
+
+  Set set8 = Set.identity();
+  print("Set 8 : $set8");
+  print("");
+  set8.addAll({0,1,2,3,4});
+  print("Set 8 : $set8");
+  print("");
+
+  set7.forEach((element) {
+    print(element);
+  });
+  print("");
+
+  print(set1.union(set2));
+  print("");
+
+
+  print(set1.difference(set8));
+  print("");
+
+  print(set1.intersection(set8));
+  print("");
 }
