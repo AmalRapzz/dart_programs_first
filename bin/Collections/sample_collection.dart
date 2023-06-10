@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 ///--------Collections---------
 
 /// ----> 1) List
@@ -189,7 +191,7 @@ void main(){
   print("----------------SET----------------");
   print("");
 
-  Set set1 = {0,1,2,3,4,5,6};
+  Set set1 = {1,2,3,4,5,6};
 
   var set2 = <int> {50,51,52,53,54,55,56};
 
@@ -275,4 +277,101 @@ void main(){
 
   print(set1.intersection(set8));
   print("");
+
+  print("");
+  print("----------------QUEUE----------------");
+  print("");
+
+  ///Double ended queue can add and remove values from both sides
+
+  Queue queue1 = Queue();
+  queue1.add(0);
+  queue1.add(1);
+  queue1.add(2);
+  queue1.add(3);
+  queue1.add(4);
+  queue1.add(5);
+
+  print("Queue 1 = $queue1");
+  print("");
+
+  Queue queue2 = Queue();
+  queue2.add("A");
+  queue2.add("B");
+  queue2.add("C");
+  queue2.add("D");
+  queue2.add("E");
+
+  print("Queue 2 = $queue2");
+  print("");
+
+  queue1.remove(0);
+  queue1.remove(1);
+  queue1.remove(2);
+  queue1.remove(3);
+  queue1.remove(4);
+  queue1.remove(5);
+
+  queue1.addAll(set1);   ///We can add a set into an
+  queue1.addFirst(0);
+  queue1.addLast(10);
+
+  print("Queue = $queue1");
+
+  queue2.remove("C");
+  queue2.remove("D");
+  queue2.remove("E");
+
+
+  queue2.addAll(set3);   ///We can add a set into an
+
+  queue2.remove("A");
+
+  queue2.addFirst("A");
+  queue2.addLast("M");
+
+  print("Queue 2 = $queue2");
+  print("");
+
+  var queue3=Queue.of({5,10,15,20,25});
+
+  print("Queue 3 = $queue3");
+  print("");
+
+  Queue<int> queue4=Queue.from({1,2,3,4,5});
+
+  print("Queue 4 = $queue4");
+
+  /// Queue Printing Using for
+  print("");
+  for(int i=0; i<=queue3.length;i++)
+  {
+    print(i);
+  }
+
+  /// Queue Printing Using forEach
+  print("");
+  queue4.forEach((i){
+    print(i);
+  });
+
+  print("");
+  print("----------------SET----------------");
+  print("");
+
+  Map map1 = <int, String> {1:"A",2:"B",3:"C",4:"D",5:"D"};
+  print("Map 1 : $map1");
+  print("");
+
+  var student = <String,dynamic>{
+    "Name" : "AMAL KRISHNA K A",
+    "Age" : 20,
+    "Course" : "BSc Computer Science",
+    "Place" : "Thrissur",
+    "Phone" : 8304087189
+  };
+
+  print("Map 2 : $student");
+  print("");
+
 }
