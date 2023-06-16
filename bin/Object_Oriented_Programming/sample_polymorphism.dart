@@ -19,7 +19,7 @@ class Child extends parent{
   {
     int s1 = 45+68+85;
     print("SUM 2 = $s1");
-    super.add();      /// it used to call functions/constructor/... inside the parent class
+    super.add();      /// it used to call functions/constructor/... inside the parent classHow to implem
   }   
 }
 
